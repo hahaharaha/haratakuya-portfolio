@@ -1,0 +1,714 @@
+@charset "UTF-8";
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+@media(max-width:767px){
+.nav li{
+    display:block;
+}
+.keyvisual ,#slideshow,.coment,.subtitle , .introduction, .introduction-item,.headline, .about-1,.work{
+    max-width: 100%;
+}
+.introduction-item{
+    display: block;
+    float:none;
+    
+}
+.coment{
+    position:static;
+}
+.introduction{
+    display: block;
+}
+.keyvisual{
+    position:relative;
+}
+img{
+    max-width:100%;
+    height:auto;
+}
+   
+}
+
+html{
+    max-width:100%;
+    height:auto;
+    margin:0;
+}
+
+body{
+    font-size:62.5%;
+    font-family: "Sawarabi Mincho",Meiryo,sans-serif; 
+    letter-spacing: 3px;
+}
+a:link ,a:visited ,a:hover, a:active{
+    text-decoration:none;
+    color:rgb(0, 0, 0);
+}
+/* clearfix用*/
+.clearfix::after{
+    content:'';
+    display:block;
+    clear:both;
+}
+/*headerに関して*/
+.header{
+    display:inline-block;
+    position:relative;
+    font-size:3.0rem;
+    margin:50px auto 0 ;
+    padding-bottom:15px;
+   border-left:20px;
+    letter-spacing: 4px;
+    font-weight:bold;
+}
+.header::before
+{   content:"";
+    position: absolute;
+    right:-570px;
+    bottom:0;
+    left:100px;
+    border-bottom:1px solid #027a8a;;  
+}
+.header a{
+    margin-left:100px;
+}
+
+.nav{
+    list-style-type: none;
+    margin:30px auto 30px ;
+    text-align: right;
+    width:1280px;
+}
+.nav ul{
+    margin-right:100px;
+}
+.nav-item{
+    display: inline-block;
+    text-align:center;
+    width:150px;
+    margin:0 20px;
+    padding:3px 15px;
+    color:#333333;
+    /*
+    border:2px solid #333333;
+    border-radius:5px;*/
+    transition:0.15;
+    opacity:0.5;
+    letter-spacing: 3px;
+}
+
+.nav-item:hover{
+    opacity:1;
+    
+}
+/*navに関して*/
+.coment{
+    display:inline-block;
+    writing-mode:vertical-rl; 
+    text-align: middle;
+    font-size:2.0rem;
+    font-weight: bold;
+    animation: fadein-keyframes 6s ease 0s 1 forwards;
+    position:absolute;
+    top:10px;
+  left:1050px;
+  font-family:"Hannari",Meiryo,sans-serif; 
+}
+.coment p{
+    width:300px;
+    height:700px;
+    padding:0px;
+    display: block;
+    line-height: 100px;;
+
+}
+@keyframes fadein-keyframes {
+    0% {
+      opacity: 0;
+    }
+    70%{
+        opacity:0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+#slideshow {
+    display:inline-block;
+    animation: fadeout-keyframes 5s ease 0s 1 forwards;
+    position: absolute;
+    width:1080px;
+    left:100px
+   
+}
+@keyframes fadeout-keyframes {
+    0% {
+      opacity: 1;
+    }
+    50%{
+        opacity:1;
+    }
+
+    100% {
+      opacity: 0;display:none;
+    }
+  }
+#slideshow img{
+    width:1080px;
+    height: 600px;
+}
+.image{
+    display:inline-block;
+    text-align: center;
+    width:900px;
+    margin-left:100px
+    
+   
+    
+}
+.keyvisual{
+    position: relative; 
+    margin:0px auto 80px;
+    width:1280px;
+}
+/*headlineに関して*/
+.introduction{
+    display:flex;
+    width: 1280px;
+    border-collapse:separate;
+    border-spacing: 60px 10px;
+    text-align: center;
+    margin:0 auto 100px;
+}
+.headline{
+    display:block;
+    line-height: 40px;
+    margin:0 auto;
+    text-align: center;
+
+}
+.introduction-item{
+    display:inline-block;
+    line-height: 40px;
+    margin:0 auto;
+    width:580px;
+    
+}
+.headline-1 , .headline-2{
+    font-size:1.5rem;
+    color:#027a8a;
+    letter-spacing: 2px;
+    text-align: center;
+    
+   
+}
+.headline-2{
+    font-size:1.2rem;
+    opacity: 0.6;
+}
+.headline-text{
+    font-size:1.0rem;
+    letter-spacing: 3px;   
+    margin-top:20px;
+
+   
+    
+}
+
+/*subtitleに関して*/
+
+.subtitle {
+    display:block;
+    position:relative;
+    font-size:2.0rem;
+    opacity:0.5;
+    margin:80px auto 40px;
+    padding-bottom:15px;
+   border-left:20px;
+    letter-spacing: 4px;
+    font-weight:bold;
+    width:1280px;
+    text-align: center;
+    
+}
+.subtitle::before{
+        content:"";
+        position: absolute;
+        right:400px;
+        left:400px;
+        bottom:0;
+        top:1px;
+        border-left:4px solid #027a8a;
+        border-bottom:1px solid #027a8a;;
+        
+    }
+   
+
+.introduction-item:nth-of-type(1){
+    float:left;
+}
+.introduction-item:nth-of-type(2){
+    float:right;
+}
+
+.introduction-item .fa{
+    margin:20px auto;
+    
+    text-align:center;
+    color:rgba(255, 0, 0, 0.507);
+   
+}
+.about-1{
+    width:1280px;
+    margin:0 auto 100px;
+}
+.ii{
+    display:flex;
+    margin:0px;
+}
+.iii .fa{
+    
+    text-align: center;
+    display: block;
+    
+}
+.iii {
+    display:block;
+    width:1280px;
+    text-align: center;
+    margin:0 auto;
+   
+}
+.iii p .fa{
+    display:block;
+    text-align:center;
+    margin-left:0px;
+}
+.img{
+    width:500px;
+    height:500px;
+    text-align:center;
+    margin-left:100px;
+    transition:transform 0.3s;
+    transition:-webkit-transform 0.3s;
+}
+.img:hover{
+   -webkit-transform:rotate(360deg);
+   transform:rotate(360deg);
+}
+.skill-item{
+    margin:50px auto 0;
+    width:500px;
+}
+.skill-item h2{
+    font-size:1.0rem;
+    letter-spacing: 3px;
+    margin:20px 0;
+    text-align:left;
+}
+.skill-item dl{
+    font-size:1.0rem;
+    margin:40px 0;  
+    
+}
+.skill-item dt{
+    margin:10px;
+    color:#333333;
+    font-weight: bolder;
+    border-bottom: 2px solid #eb4b4b;
+}
+.skill-item dd{
+    margin:10px 0 10px 30px;
+    line-height: 20px;
+   width:100%;
+}
+
+
+
+.body-button {
+    margin-top:10px;
+    margin-left:5px;
+    margin-right:5px;
+   height:40px;
+    text-align: bottom;
+    display: inline-block;
+    text-align:center;
+    color:#fff;
+    background-color:#eb4b4b;
+    padding:10px 15px;
+    border-radius:5px;
+    letter-spacing: 3px;
+    clear: both;
+}
+.about-button .body-button{
+    color:white;
+}
+.body-button:hover{
+    color:black;
+    opacity:0.8;
+}
+.Check{
+    color:#008290;
+    font-weight:bold;
+    display:flex;
+    margin:25px 25px 25px 0;
+}
+
+
+    
+
+
+
+/*WORKに関して*/
+.subtitle-3{
+    clear: both;
+    
+}
+/*buttonに関して*/
+.button{
+    display: block;
+    width:1280px;
+    text-align: center;
+    margin:50px auto 20px;
+    
+}
+
+/*PROFILEページに関して*/
+.about{
+    width:1280px;
+    margin:0 auto 100px;
+    margin-top:100px;
+}
+.Profile{
+    float: left;
+    flex:0 0 auto;
+    position: relative;
+    
+}
+.Profile .image-2{
+    display: block;
+    width:500px;
+    margin-left:100px;
+}
+.Profile h1{
+    font-size:1.2rem;
+    position: absolute;
+    bottom:-44px;
+    left:100px;
+}
+.Profile-1{
+    display:flex;
+    font-size:1.0rem;
+    margin-right:100px;
+    flex:1 1 auto;
+    width:580px;
+    position: relative;
+}
+.Profile h1{
+width:500px;
+height:40px;
+text-align: center;
+font-size:2.0rem;
+font-style: italic;
+background-color:#eb4b4b;
+color:rgb(31, 27, 27);
+font-weight: initial;
+transform: skewY(-10deg);
+position:absolute;
+top:420px;
+}
+
+.personality{ 
+    display:inline-block;
+    text-align: left;
+    width:200px;
+    height:468px;
+    margin:30px 30px 0;
+    
+} 
+
+.Profile-1 dd{
+    font-size:1.0rem;
+    letter-spacing: 2px;   
+    line-height: 25px;
+    margin:15px 30px 15px 5px;}
+
+.chronicle{
+    width:320px;
+    height:468px;
+    margin:30px 0 0;
+}
+.chronicle .Profile-item{
+   width:320px;
+   margin:0;
+   margin:0 30px 0 5px;
+}
+.Profile-1 dt{ 
+    display:flex; 
+    font-weight:bold;
+    text-align: left;
+    margin:5px ;
+    color:rgba(255, 0, 0, 0.507);
+
+}
+.Profile-item{
+    margin:30px 0px 30px 30px;
+    text-align:left;
+    font-size:1.0rem;
+    letter-spacing: 3px;   
+    line-height:30px;
+}
+dl:nth-of-type(2) dt{
+    margin:15px 0;
+}
+dl:nth-of-type(2) dt:nth-of-type(1){
+    margin-top:0;
+}
+
+.private{
+    clear: both;
+}
+
+.PRIVATE{
+    display:flex;
+    margin:0 auto;
+    width:1280px;
+    margin-top:100px;
+
+}
+.PRIVATE1{
+    margin:0 100px;
+    width:1080px;
+    display: flex;
+}
+.PRIVATE-item{
+    display:inline-block;
+    width:500px;
+    margin:10px;
+    }
+    .PRIVATE-item:nth-of-type(1){
+        float:left;
+    }
+    .PRIVATE-item:nth-of-type(2){
+        float:right;
+    }
+.PRIVATE-item img{
+    width:500px;
+height:300px;}
+
+.PRIVATE-text{
+    display:inline-block;
+    width:500px ;
+    height:394px;
+    margin:20px 0;
+    font-size:1.0rem;
+    letter-spacing: 3px;   
+    line-height:25px;
+    border-top:3px dotted #eb4b4b;}
+
+/*CONTACTについて*/
+form{
+    text-align: center;
+    width:1080px;
+    margin:0 100px;
+  
+}
+.contact{
+    margin:0px auto 70px;
+    width:1280px;
+}
+.contact1{
+    width:1080px;
+    margin:0 100px;
+    font-size:1.0rem;
+}
+.contact p{
+    text-align: center;
+}
+.contact-title{
+    margin:20px 20px 0 120px;
+    width:200px;
+    text-align: center;
+   
+    
+    }
+.contact-text{
+    margin-top: 20px;
+}
+.contact-item{
+    display: flex;
+    margin:30px 0 10px 0;
+    font-size:1.3rem;
+    width:1080px;
+    text-align: center;
+}
+.contact-form{
+    width:540px;
+    text-align: left;
+}
+.contact-item:nth-of-type(2) .contact-form{
+    margin-top:20px;
+}
+.work-1{
+    width:1280px;
+    margin:0 auto;
+}
+.work{
+    display:inline-block;
+    text-align: center;
+    width:1280px;
+    margin:0 auto;
+}
+.work-image{
+    display: inline-block;
+  
+    
+}
+.work-image img{
+    width:600px
+}
+.work-image h2{
+    font-size:1.0rem;
+    margin:50px 0 30px;
+}
+input[name="subject"]{
+    width:20em;
+    height:3em;
+    display:inline-block;
+}
+label .contact-text:nth-of-type(1){
+    margin-bottom:-3px;
+}
+
+textarea{
+    width:60em;
+    height:30em;
+}
+input[type="submit"]{
+    display: inline-block;
+   height:50px; 
+   width:300px;
+    border:60px;
+    margin:50px;
+    font-size:1.4rem;
+    border-radius: 8px;
+    color:#fff;
+    background-color:#eb4b4b;
+}
+input[type="submit"]:hover{
+    color:black;
+    opacity:0.8;
+}
+
+/*OPUSに関して*/
+.OPUS{
+    width:80%;
+    margin:0 auto;
+}
+.opus{
+    margin:0 auto;
+}
+.opus-item{
+    display: flex;
+}
+.wrapper{
+    display:inline-block;
+    font-size:1.5rem;
+    text-align: center;
+    width:100%;
+    margin-bottom: 20px;;
+   
+}
+.wrapper h1{
+    display: block;
+    margin:60px auto 30px;
+    position:relative;
+    border:3px;
+    padding-bottom: 10px;;
+}
+.wrapper h1::before{
+    content:"";
+    position:absolute;
+    border-bottom:3px dotted rgba(255, 0, 0, 0.507);
+    right:100px;
+    left:100px;
+bottom:0;
+top:0;
+}
+.opus-text dl{
+    margin:20px 0;
+}
+.opus-text dl dt{
+    font-weight:bold;
+    color:rgba(255, 0, 0, 0.507);
+    text-align: left;
+    margin:10px 0;
+  
+}
+.opus-text dd{
+    display:block;
+    text-align: left;
+    margin-top:10px;
+    margin-left: 30px;
+    text-indent:-1.2rem;
+}
+.opus-item img{
+   width:100%;
+}
+.opus-item-left{
+    width:40%;
+    margin-top:40px;
+}
+.opus-item-left a{
+    font-size:1.1rem;
+    margin-top: 50px;
+    display: inline-block;;
+}
+.opus-item-left .body-button{
+    background-color:#eb4b4b;
+    color:white;
+}
+.opus-item-left a:hover{
+    opacity: 0.8;
+    color:black;
+}
+.opus-text{
+   width:50%;
+   margin-left:30px;
+    font-size:1.0rem;
+}
+.photoshop img{
+    display: inline-block;
+    margin-top:0px;
+    width:50%;
+    height:40%;
+}
+
+/*button*/
+.about-button{
+    display: flex;
+    margin:0 auto;
+    text-align: right;
+    margin-left:900px;
+    font-size:1.0rem ;
+}
+footer{
+    width:1280px;
+    margin:0 auto;
+    font-size:1.0rem;
+    text-align: center;
+
+}
+
+
+
+/*自己紹介
+<p>前職では家具コーディネーターとして販売店勤務。<br>
+顧客のニーズを引き出し「不満を満足へ」をもっとうに対面接客を行なってきました。<br>
+2020年夏、Web業界に興味を持ち独学にてコーディングを学び始める。<br>
+</p>
+*/
